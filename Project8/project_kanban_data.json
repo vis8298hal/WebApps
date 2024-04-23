@@ -1,0 +1,9 @@
+{
+    "Project1":{
+        "name":"Project1",
+        "todo":["Empty"],
+        "inprogress":["Empty"],
+        "done":["Empty"]
+
+    }
+}
