@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: rgba(161,100,233,0.8 );
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.btn{
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    background-color: purple;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+.btn:focus{
+    outline: 0;
+}

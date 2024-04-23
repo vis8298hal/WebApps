@@ -1,0 +1,81 @@
+:root{
+    --sidebar_background-color: rgb(108, 161, 235);
+    --sidebar_title_color: rgb(251, 233, 207);
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color:aliceblue;
+}
+.sidebar{
+    background-color: var(--sidebar_background-color);
+    height: 100vh;
+    margin: 0;
+    padding: 2px;
+    position: absolute;
+    min-width: 300px;
+    width: 22vw;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sidebar h1{
+    font-size: 80px;
+    color: var(--sidebar_title_color)
+}
+
+.sidebar ul{
+    
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    width: 22vw;
+}
+
+.sidebar li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+    position:relative;
+    width: 22vw;
+    font-size: 20px;
+    line-height: 10vh;
+    border: 1px solid rgba(48, 47, 47, 0.055);
+    cursor: pointer;
+    border-radius: 3%;
+}
+
+.sidebar li:focus{
+    outline: 0;
+}
+.sidebar li:active{
+    transform: scale(0.98);
+}
+.kanban-box{
+    position: absolute;
+    top: 0;
+    left: 22vw;
+    height: 100vh;
+    width: 78vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.container{
+    display: none;
+}
+.container.active{
+    display: block;
+}
